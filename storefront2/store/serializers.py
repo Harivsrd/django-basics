@@ -23,6 +23,7 @@ class ProductSerializer(serializers.ModelSerializer):
     #     queryset = Collection.objects.all(),
     #     view_name = 'collection-detail'
     # )
+    #serilizers
     
     def calculate_tax(self, product: Product):
         return product.unit_price * Decimal(1.1)
